@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Record</title>
+  </head>
+  <body>
+    <header>
+      <h1>MEDICAL RECORD</h1>
+      <meta name="keywords" content="medical, record" />
+      <meta name="description" content="medical record for dentist" />
+      <meta name="author" content="yoshua" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </header>
+
+    <!-- navigation -->
+    <nav class="w3-bar w3-black">
+      <a href="#home" class="w3-button w3-bar-item">Home</a>
+      <a href="#contact" class="w3-button w3-bar-item">contact</a>
+      <a href="#setting" class="w3-button w3-bar-item">setting</a>
+    </nav>
+
+    <form>
+      <fieldset>
+        <label for="fname">identity:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="fullname"
+        /><br />
+        <label for="lname">Password:</label><br />
+        <input
+          type="password"
+          id="lname"
+          name="lname"
+          placeholder="password"
+        /><br />
+        <input type="submit" value="submit" /><br />
+      </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+      <p>write carefully!</p>
+      <label for="name"><strong>fullname</strong></label
+      ><br />
+      <input
+        type="text"
+        id="name"
+        name="fullname"
+        placeholder="fullname"
+      /><br />
+      <label for="age">age :</label><br />
+      <input type="text" id="age" name="age" placeholder="0-100" /><br />
+      <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" />
+      <input type="submit" value="submit" />
+
+      <br />
+
+      <p>do you have any medical history</p>
+      <input type="radio" name="yes" id="yes" value="yes" />
+      <label for="yes">yes</label> <br />
+      <input type="radio" name="no" id="no" value="no" />
+      <label for="no">no</label> <br />
+
+      <br />
+
+      <p>if you have what it is?(ignore if you dont have)</p>
+      <input
+        type="text"
+        id="med"
+        name="medical history"
+        placeholder="hypertension, diabetes, etc"
+      /><br />
+      <input type="submit" value="submit" />
+
+      <br />
+
+      <p>where is the problem in regio :</p>
+      <label for="regio">choose the regio :</label>
+      <select name="regio" id="regio">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br />
+      <input type="submit" value="submit" />
+      <style>
+        figure {
+          border: 1px #cccccc solid;
+          padding: 4px;
+          margin: auto;
+        }
+        figcaption {
+          background-color: black;
+          color: white;
+          font-style: bold;
+          padding: 1px;
+          text-align: center;
+        }
+      </style>
+      <figure>
+        <img
+          src="https://infodrg.com/wp-content/uploads/2020/12/1206D6AF-6FA6-41C5-A2F5-D49B1D86622A.jpeg"
+          alt="odontogram"
+          style="width: 50%"
+          100%
+        />
+        <figcaption>Fig.1 odontogram</figcaption>
+      </figure>
+
+      <br />
+
+      <p>what is the problem:</p>
+      <input type="checkbox" name="caries" id="caries" value="1" />
+      <label for="caries">caries</label> <br />
+      <input type="checkbox" name="radiks" id="radiks" value="2" />
+      <label for="radiks">radiks</label> <br />
+      <input type="checkbox" name="tartar" id="tartar" value="3" />
+      <label for="tartar">tartar</label> <br />
+      <input type="submit" value="submit" />
+
+      <br />
+
+      <p>anamnesa :</p>
+      <textarea
+        id="anamnesa"
+        name="anamnesa"
+        rows="3"
+        cols="50"
+        placeholder="anamnesa"
+      >
+      </textarea>
+      <br />
+      <input type="submit" value="submit" />
+
+      <br />
+    </form>
+    <footer>
+      <p>U can contact us in 081122223345</p>
+      <br />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/399/399271.png"
+        alt="plus medika"
+        width="10%"
+      />
+    </footer>
+  </body>
+</html>
